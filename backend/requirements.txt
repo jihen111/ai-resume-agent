@@ -1,0 +1,18 @@
+# --- Web / API ---
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+python-multipart>=0.0.9          # required by FastAPI for UploadFile / Form
+pypdf>=5.0,<7.0                  # text extraction from PDF resumes
+
+# --- Validation / Config ---
+pydantic>=2.7,<3.0
+
+# --- Database (used once PostgreSQL storage replaces the in-memory list) ---
+sqlalchemy>=2.0,<3.0
+psycopg2-binary>=2.9,<3.0
+
+# --- AI / LLM ---
+langchain>=1.0,<2.0
+langchain-core>=1.0,<2.0
+langchain-openai>=1.0,<2.0
+openai>=1.40,<3.0
